@@ -11,9 +11,10 @@ import {
   FiCode, 
   FiHeart
 } from "react-icons/fi";
+import type { IconType } from "react-icons";
 
 interface Value {
-  icon: React.ComponentType;
+  icon: IconType;
   title: string;
   description: string;
   color: string;

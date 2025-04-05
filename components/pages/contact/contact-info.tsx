@@ -4,16 +4,17 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { FiMail, FiPhone, FiMapPin, FiClock, FiGithub, FiTwitter, FiLinkedin, FiInstagram } from "react-icons/fi";
+import type { IconType } from "react-icons";
 
 interface ContactInfoItem {
-  icon: React.ComponentType;
+  icon: IconType;
   title: string;
   content: React.ReactNode;
   delay: number;
 }
 
 interface SocialLink {
-  icon: React.ComponentType;
+  icon: IconType;
   href: string;
   label: string;
 }
