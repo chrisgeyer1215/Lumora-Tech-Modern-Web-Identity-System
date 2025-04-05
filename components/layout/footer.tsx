@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { FiMail, FiPhone, FiMapPin, FiGithub, FiTwitter, FiLinkedin, FiInstagram } from "react-icons/fi";
+import { IconType } from "react-icons";
 
 interface FooterLink {
   label: string;
@@ -14,7 +15,7 @@ interface FooterSection {
 }
 
 interface SocialLink {
-  icon: React.ComponentType;
+  icon: IconType; // Use IconType from react-icons for proper typing
   href: string;
   label: string;
 }
