@@ -10,8 +10,8 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/about", label: "About" },
-  { href: "/case-studies", label: "Work" },
-  { href: "/careers", label: "Careers" },
+  { href: "/portfolio", label: "Portfolio" },
+  { href: "/case-studies", label: "Case Studies" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -21,6 +21,7 @@ export default function Header() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
+  // Use Next.js 15's improved useEffect cleanup
   useEffect(() => {
     setMounted(true);
     
@@ -35,7 +36,7 @@ export default function Header() {
     };
   }, []);
 
-  // Toggle theme with animation support
+  // Toggle theme with better animation support in Next.js 15
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
