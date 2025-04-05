@@ -5,10 +5,11 @@ import { motion, useInView } from "framer-motion";
 import { FiMonitor, FiSmartphone, FiCloud, FiDatabase, FiLayout, FiCode } from "react-icons/fi";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import type { IconType } from "react-icons";
 
 interface Service {
   id: string;
-  icon: React.ComponentType;
+  icon: IconType;
   title: string;
   description: string;
   link: string;

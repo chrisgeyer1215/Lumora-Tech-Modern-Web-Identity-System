@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   images: {
     remotePatterns: [
       {
@@ -20,16 +19,6 @@ const nextConfig = {
       fullUrl: true,
     },
   },
-  // Optimization options
-  optimizePackageImports: [
-    'framer-motion',
-    'react-icons',
-    'react-hook-form',
-  ],
-  // The experimental optimizeCss is now stable in Next.js 15
-  optimizeCss: true,
-  // Improved scroll behavior
-  scrollRestoration: true,
 };
 
 export default nextConfig;

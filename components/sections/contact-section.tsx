@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import type { IconType } from "react-icons";
 
 // Form validation schema
 const formSchema = z.object({
@@ -19,7 +20,7 @@ const formSchema = z.object({
 type FormValues = z.infer<typeof formSchema>;
 
 interface ContactInfoProps {
-  icon: React.ComponentType;
+  icon: IconType;
   title: string;
   content: string | React.ReactNode;
   delay: number;

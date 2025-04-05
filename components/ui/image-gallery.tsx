@@ -174,9 +174,11 @@ export default function ImageGallery({
               className="relative max-w-4xl w-full h-full max-h-[80vh] flex flex-col"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="relative h-full w-full overflow-hidden rounded-lg bg-gradient-to-br flex items-center justify-center"
+              <div className={cn(
+                "relative h-full w-full overflow-hidden rounded-lg bg-gradient-to-br flex items-center justify-center p-6",
+                selectedImage.color
+              )}
                 style={{ backgroundImage: `linear-gradient(to bottom right, var(--tw-gradient-stops))` }}
-                className={cn("p-6", selectedImage.color)}
               >
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white p-4">

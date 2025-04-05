@@ -4,10 +4,11 @@ import { useRef, useState } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { FiMonitor, FiSmartphone, FiCloud, FiDatabase, FiLayout, FiCode, FiPieChart, FiTrendingUp } from "react-icons/fi";
 import { cn } from "@/lib/utils";
+import type { IconType } from "react-icons";
 
 interface Service {
   id: string;
-  icon: React.ComponentType;
+  icon: IconType;
   title: string;
   description: string;
   features: string[];
