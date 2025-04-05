@@ -12,18 +12,55 @@ A modern technology company website built with Next.js, TypeScript, Tailwind CSS
 - **SEO Ready**: Includes metadata configuration for better search engine visibility
 - **Type-Safe**: Full TypeScript integration for better developer experience
 - **Form Validation**: Uses React Hook Form and Zod for robust form handling
+- **Multi-page Layout**: Includes Home, Services, About, and Contact pages
+- **Component Library**: Reusable UI components for consistent design
+
+## Pages
+
+1. **Home Page**
+   - Hero Section
+   - About Section
+   - Services Showcase
+   - Tech Stack Display
+   - Case Studies
+   - Testimonials
+   - Contact Form
+
+2. **Services Page**
+   - Services Hero
+   - Detailed Services List with expandable items
+   - Development Process Timeline
+   - Tech Stack Section
+   - Contact Section
+
+3. **About Page**
+   - About Hero
+   - Company History/Story
+   - Our Values
+   - Team Members with filters
+   - Contact Section
+
+4. **Contact Page**
+   - Contact Hero
+   - Contact Form with validation
+   - Contact Information
+   - FAQ Section
 
 ## Project Structure
 
 ```
 ├── app/                 # Next.js app router pages
+│   ├── page.tsx         # Home page
+│   ├── about/           # About page
+│   ├── services/        # Services page
+│   ├── contact/         # Contact page
 ├── components/          # Reusable UI components
 │   ├── layout/          # Layout components (header, footer)
-│   ├── sections/        # Page sections
+│   ├── sections/        # Global page sections
+│   ├── pages/           # Page-specific components
 │   └── ui/              # UI components
 ├── lib/                 # Utility functions
-├── public/              # Static assets
-└── styles/              # Global styles
+└── public/              # Static assets
 ```
 
 ## Technologies Used
