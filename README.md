@@ -27,7 +27,7 @@ Modern technology company website built with Next.js, TypeScript, Tailwind CSS, 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/shitaanshus27/anvitha-tech-new.git
+git clone https://github.com/chrisgeyer1215/Lumora-Tech-Modern-Web-Identity-System.git
 cd anvitha-tech-new
 ```
 
